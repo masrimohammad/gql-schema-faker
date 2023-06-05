@@ -1,0 +1,51 @@
+{
+  "name": "gql-schema-faker",
+  "version": "1.0.0",
+  "description": "GraphQL Schema Faker is a versatile package that allows developers to generate realistic fake data based on a GraphQL schema. It seamlessly integrates into your GraphQL development workflow, providing an efficient way to populate your schema with meaningful mock data for testing, prototyping, or populating a development environment.",
+  "main": ".build/index.js",
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint . --ext .ts",
+    "lint-fix": "eslint . --ext .ts --fix",
+    "test": "npm run lint",
+    "test:int": "ts-node ./node_modules/jest/bin/jest.js --config=jest.config.js"
+  },
+  "homepage": "https://github.com/masrimohammad/gql-schema-faker#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/masrimohammad/gql-schema-faker"
+  },
+  "bin": {
+    "gql-schema-faker": ".build/bin/index.js"
+  },
+  "author": "Mohamad Masri",
+  "license": "ISC",
+  "dependencies": {
+    "faker": "^5.5.3",
+    "graphql-tools": "^8.3.19",
+    "graphql": "^15.3.0",
+    "constructs": "^10.0.0",
+    "@types/jest": "^26.0.14",
+    "@types/node": "^18.11.18",
+    "@types/yargs": "^17.0.20",
+    "fs": "0.0.1-security",
+    "jest": "^26.1.0",
+    "js-yaml": "^3.13.1",
+    "path": "^0.12.7",
+    "ts-jest": "^26.1.2",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.9.4",
+    "yaml-cfn": "^0.2.3",
+    "yargs": "^17.6.2",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.6.0",
+    "@typescript-eslint/parser": "^5.10.2",
+    "eslint": "^7.14.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.32.1"
+  }
+}
